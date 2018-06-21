@@ -1,0 +1,226 @@
+##############################
+stat
+touch
+##############################
+cp 실습
+cp a.txt b.txt
+
+cp /etc/passwd /etc/passwd_backup
+cp /etc/shadow /etc/shadow_backup
+
+MAC Time 확인
+
+stat
+
+##############################
+git ssh 원격 접속
+
+사용자확인
+who
+w
+last
+
+/***/******************************************************
+과제
+***/
+각각 차이 - 명령어, 사용시간 로그인 여부 등
+#############################
+
+
+
+head
+head -n 5
+tail
+tail -n 5
+
+more 
+space, b, z로 다음, 이전
+h로 옵션 확인
+
+| pipe
+grep
+
+ls -al /etc
+ls -al /etc | more
+ls /etc | grep d$
+
+모니터링
+tail -f 파일명
+
+/etc/rsyslog.conf 	system log 설정 파일	**과제 각 로그파일별로 어떤 내용이 들어가는지
+tail -f ./var/log/messages
+ifconfig eth0 down
+ifconfig eth0 up
+
+/******************************************************
+과제 drwxrwxrwx bit / 문자, umask 의미, 소유자, 소유그룹
+***/
+
+
+권한 숫자/이니셜
+chmod 777 a.txt
+ls -al 	*.txt
+chmod u-x,o-wx,g-wx a.txt
+ls -al 	*.txt
+umask 확인 - 0022
+
+chown fedora a.txt
+chgrp fedora a.txt
+##############################
+사용자 수동으로 추가
+cp /etc/passwd /etc/passwd_backup
+cp /etc/shadow /etc/shadow_backup
+
+/etc/passwd
+/etc/shadow
+/etc/group
+마지막줄 추가
+
+mkdir /home/사용자명
+su - 사용자명
+쉘 앞의 모양 다름
+
+cp /etc/skell/.* /home/사용자명
+su - 사용자명
+###########################
+cd test
+
+파일 생성
+cat > fileName
+
+ls > fileName
+
+ls >> fileName
+###########################
+/***/******************************************************
+과제
+***/
+
+>, >>  1 2 3 표준 스트림
+###########################
+
+파일 삭제 rm
+rm c
+
+상위 디렉토리에서 rmdir로 디렉토리 삭제 - 파일 존재
+cd ..
+rmdir test
+
+디렉토리로 이동해서 파일 삭제
+cd test
+rm a b
+
+
+ls
+touch a b c d e f
+
+cd ..
+
+디렉토리 및 파일 삭제 - yes 확인
+rm -r test
+
+강제삭제 - 질문무시 - 편리한가?
+rm -rf test
+
+mkdir test
+touch a b c d e f g 1 2 3 4 5
+
+rm -rf ./*
+
+# rm -rf /*
+
+
+
+##############################
+workstation network setting
+image - bridge
+Host 방화벽 해제
+
+httpd 외부 접속 확인
+eth0 ip확인
+ifconfig eth0
+GUI
+dhcp 설정
+
+ip갱신
+ifconfig eth0 down / up
+
+방화벽 확인
+system-config-firewall
+80포트 허용
+##############################
+페도라에 있는 쉘 확인
+파일명으로 실행
+sh
+ls
+
+bash
+ls
+
+which sh
+which bash
+
+절대경로로 실행
+/bin/sh
+/bin/bash
+
+
+PATH 확인
+echo $PATH
+
+find 명령어 실습
+find /bin -name *sh
+find /bin/ -name *sh
+
+##############################
+ls -al 파일타입, 권한 확인
+
+디렉토리 만들기
+mkdir test
+
+cd test
+
+파일 만들기 touch
+touch a.txt
+touch b.txt
+
+ls -al 	*.txt		wild card
+
+----------------------------------------------------------------
+
+
+
+
+리눅스란?
+vm 설치 - 설명
+fedora 실행
+
+조사발표
+
+커널, 쉘
+
+why git-bash
+
+
+vmware tools 설치
+
+명령어 실습 
+ls, pwd, cd
+
+cat, vi
+
+httpd - html 태그 복습
+
+
+
+
+
+useradd dc26 
+
+사용자전환 - 로그인 안됨
+
+
+/etc/passwd, /etc/shadow, /etc/group
+
+passwd, shadow 숙제
+
