@@ -12,46 +12,6 @@ MAC Time 확인
 
 stat
 
-##############################
-git ssh 원격 접속
-
-사용자확인
-who
-w
-last
-
-/***/******************************************************
-과제
-***/
-각각 차이 - 명령어, 사용시간 로그인 여부 등
-#############################
-
-
-
-head
-head -n 5
-tail
-tail -n 5
-
-more 
-space, b, z로 다음, 이전
-h로 옵션 확인
-
-| pipe
-grep
-
-ls -al /etc
-ls -al /etc | more
-ls /etc | grep d$
-
-모니터링
-tail -f 파일명
-
-/etc/rsyslog.conf 	system log 설정 파일	**과제 각 로그파일별로 어떤 내용이 들어가는지
-tail -f ./var/log/messages
-ifconfig eth0 down
-ifconfig eth0 up
-
 /******************************************************
 과제 drwxrwxrwx bit / 문자, umask 의미, 소유자, 소유그룹
 ***/
